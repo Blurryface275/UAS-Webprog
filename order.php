@@ -41,8 +41,8 @@ $menu = $_SESSION['menu'] ?? [];
 
         .card {
             width: 200px;
-            border: 1px solid #ccc;
-            padding: 10px;
+            border: 2px solid #ccc;
+            padding: 5px;
             border-radius: 8px;
             background: #fff;
         }
@@ -52,6 +52,9 @@ $menu = $_SESSION['menu'] ?? [];
             height: 120px;
             object-fit: cover;
             border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
 
         .card button {
