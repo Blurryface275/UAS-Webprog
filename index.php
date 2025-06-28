@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Inisialisasi array session jika belum ada
+// Inisialisasi session dalam array jika belum ada
 if (!isset($_SESSION['menu'])) {
     $_SESSION['menu'] = [];
 }
@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
         'foto' => $_POST['foto-makanan']
     ];
 
-    $_SESSION['menu'][] = $data; // Tambahkan ke array session
+    $_SESSION['menu'][] = $data; // Nambahin ke array session
 }
 ?>
 
@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
         <?php
         if (!empty($_SESSION['menu'])) {
             foreach ($_SESSION['menu'] as $makanan) {
-                echo "<li>{$makanan['nama']} (Rp {$makanan['harga']})</li>";
+                echo "<li>{$makanan['nama']} (Rp {$makanan['harga']})</li>"; // ini ambil dari session array di atas
             }
         } else {
             echo "<li>Belum ada makanan.</li>";

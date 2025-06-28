@@ -20,15 +20,15 @@ $menu = $_SESSION['menu'] ?? [];
             display: flex;
         }
 
-        .left {
+        .left { /*area makanan */
             width: calc(100% - 250px);
             padding: 20px;
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 20px; /* ini buat ngatur jarak antar kartunya */
         }
 
-        .right {
+        .right {/*area total pesanan */
             width: 250px;
             background-color: #f0f0f0;
             padding: 20px;
@@ -39,7 +39,7 @@ $menu = $_SESSION['menu'] ?? [];
             overflow-y: auto;
         }
 
-        .card {
+        .card { /*ini untuk kartu makanan */
             width: 200px;
             border: 2px solid #ccc;
             padding: 5px;
